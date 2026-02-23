@@ -1,0 +1,14 @@
+ma\enset\config\Config.class
+ma\enset\presentation\Presentation2.class
+ma\enset\ioc\Bean.class
+ma\enset\presentation\Presentation.class
+ma\enset\presentation\PresentationAnnotation.class
+ma\enset\dao\IDao.class
+ma\enset\ioc\MiniApplicationContext.class
+ma\enset\ioc\Inject.class
+ma\enset\ioc\Property.class
+ma\enset\metier\MetierImpl.class
+ma\enset\metier\IMetier.class
+ma\enset\ioc\Beans.class
+ma\enset\App.class
+ma\enset\dao\DaoImpl.class

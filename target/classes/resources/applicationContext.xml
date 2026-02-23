@@ -5,8 +5,8 @@
        http://www.springframework.org/schema/beans
        http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="dao" class="dao.DaoImpl"/>
-    <bean id="metier" class="metier.MetierImpl">
+<bean id="dao" class="ma.enset.dao.DaoImpl"/>
+<bean id="metier" class="ma.enset.metier.MetierImpl">
         <property name="dao" ref="dao"/>
     </bean>
 

@@ -6,7 +6,7 @@ import ma.enset.metier.IMetier;
 public class Presentation2 {
     public static void main(String[] args) throws Exception {
 
-        Class cDao = Class.forName("dao.DaoImpl");
+Class cDao = Class.forName("ma.enset.dao.DaoImpl");
         IDao dao = (IDao) cDao.getDeclaredConstructor().newInstance();
 
         Class cMetier = Class.forName("ma.enset.metier.MetierImpl");

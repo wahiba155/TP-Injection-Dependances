@@ -1,21 +1,22 @@
 package ma.enset.metier;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-
 import ma.enset.dao.IDao;
-@Service
+import ma.enset.ioc.Inject;
+
 public class MetierImpl implements IMetier {
-     @Autowired
+
     private IDao dao;
 
-    public void setDao(IDao dao) {
+    @Inject
+    public MetierImpl(IDao dao) {
         this.dao = dao;
     }
 
+     public MetierImpl() {
+        // constructeur vide nécessaire pour new MetierImpl()
+    }
     @Override
     public double calcul() {
-        double data = dao.getData();
-        return data * 2;
+        return dao.getData() * 2;
     }
 }
